@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+
+\begin{document}
+	\begin{center}
+    
+    	% MAKE SURE YOU TAKE OUT THE SQUARE BRACKETS
+    
+		\LARGE{\textbf{Thesis Proposal}} \\
+        \vspace{1em}
+        \LARGE{\textbf{Early Detection of Fake News in Bengali Language}} \\
+        \vspace{1em}
+           \vspace{1em}
+              \vspace{1em}
+        \normalsize\textbf{Nirjas Mohammad Jakilim} \\
+        \normalsize{Reg. No: 2016331101} \\
+        \normalsize\textbf{S.M Mahamudul Hasan} \\
+        \normalsize{Reg. No: 2016331032} \\
+        \vspace{1em}
+          \vspace{1em}
+        \normalsize{Supervisor : Enamul Hassan} \\
+        \normalsize{Assistant Professor , Dept of CSE , SUST }\\
+
+        \vspace{1em}
+        
+        \normalsize{Shahjalal University  of Science and Technology} \\
+       
+     
+	\end{center}
+    
+    
+    	\section{Introduction:}
+    	
+          Day by day fake news has now become a major crisis in Bangladesh. It has a tremendous impact in our socioeconomic life. As the people of our country are very sensitive about religious and political issues, fake news can cause catastrophe withing a short period of time. Moreover as online social media and news portals are growing, people are more tend to read news from online sources. A report said that About 70 percent of the total population in Bangladesh are using internet. So it's more important to develop such method to check the facts of those news from online sources whether they are fake or true. Traditionally human fact checkers group can check the facts of a news. But this process is not time efficient and needs huge human effort. Moreover, As this process is slow sometimes the fake news goes viral before it gets a fact check. In such case Automatic fake news detection can help to reduce time and human effort. Moreover, As it's time efficient it can detect a fake news before it's going viral.
+        
+        
+      
+		\section{Problem Statement:}
+        
+       The importance of detecting fake news is now our first priority as fake news has now become a national problem. But the detection of Bengali fake news is not an easy task. As there are lack of proper data set and accuracy of model. Moreover, the resources are very low to make such enriched data set which can detect fake news using textual analysis. Moreover, there are various types of fake news such as click bait, hoax, satirical, propaganda based news. Each type of news has it's own characteristics. So the method behind detecting them is different. Also if we categorize fake news according to their impact then we have sports fake news, political fake news and others. Obviously A sports fake news and a political fake news is different. Also their impact and spreading pattern is different. That's why a brief research is needed to develop a superior method to detect the fake news. 
+       
+             
+      
+        
+	   	\section{Objectives:}
+        
+       As there is previous research work about fake news and the researchers has also made a data set to detect satirical Bengali fake news. But the data set is unfinished. So our first objective will be to extend the data set and also annotate the rest of the news which had not been annotated. Our next objective will be to work on detecting click bait related fake news. Also we will work on to detect sources that can define the fact of the news using NER. We will also work on to develop a method to detect fake news by identifying the relation between news contents and headlines. so ultimately , we will work in three major criteria: 
+       01. Deadset Extension
+       02. Click bait Detection
+       03. Source Detection through NER.
+        
+       
+    	\section{Preliminary Literature Review:}
+     Many research works have been done related this issue. In 2015, Rubin et al. has made a distinction between “three types of fake news” serious fabrications (i.e., news items about false and non-existing events or information such as celebrity gossip), hoaxes (i.e., providing false information via, for example, social media with the intention to be picked up by traditional news websites), and satire (i.e., humorous news items that mimic genuine news but contain irony and absurdity). In the same year, Conroy et al. has proposed linguistic and fact-checking based approaches to distinguish between real and fake news.
+     \par The linguistic based approach identifies the text properties, such as writing style and content, that can help to distinguish real from fake news articles. This approach mainly works though detecting the linguistic behaviours like punctuation usage, word type choices, part-of-speech tags, and emotional valence of a text are rather involuntary and therefore outside of the author’s control, thus revealing important insights into the nature of the text. This approach has given promising results to identify satirical fake news (Rubin et al., 2016). On 2017, Potthast et el. proposed a Stylometric Inquiry into Hyperpartisan to detect fake news. In 2019, Kai et el. proposed a network driven propagation analysis method to detect fake news. Here it identifies the potential fake news by identifying the source, spreading network and patterns of spreaders. In the same year, In 2017 Pete et el. proposed a method to detect clickbait related fake news by detecting the Stance of Headlines to Articles.
+     So, ultimately huge works has been done. But to detect Bengali fake news there's a little work has been done. As it's a very difficult problem there's still needs a lot of work to improve the detection of Bengali fake news.
+        
+
+	               
+    	\section{Methodology:}
+        We'll study different research articles and gathers the idea about what others are doing to detect fake news. We'll study different approach and test them how they're working according to our context. Also We will check their accuracy according to our context. Then we will build a conceptual model that works best with our data set. Also, As there are 50k news in our data set from which only 10k news are annotated. We'll annotate the rest of the data set and also extend it to improve the detection of fake news. Also we'll build a conceptual model and data set to detect click bait based fake news and stance identification. In this whole process we will use python to train our model and improve the accuracy of it.
+        
+
+        
+        \begin{thebibliography}{1}
+
+\bibitem{b1} Yimin Chen, Niall J Conroy, and Victoria L Rubin. 2015. News in an online world: the need for an "automatic crap detector".
+https://dl.acm.org/doi/abs/10.5555/2857070.2857151
+
+\bibitem{b2} Niall J Conroy, Victoria L Rubin, and Yimin Chen. 2015. Automatic deception detection: methods for finding fake news.
+https://dl.acm.org/doi/abs/10.5555/2857070.2857152
+
+\bibitem{b3} Martin Potthast, Johannes Kiesel and Kevin Reinartz. 2018. A Stylometric Inquiry into Hyperpartisan and Fake News.
+https://arxiv.org/abs/1702.05638
+
+
+\bibitem{b4} Kai Shu, Deepak Mahudeswaran and Suhang Wang. 2019. Hierarchical Propagation Networks for Fake News Detection: Investigation and Exploitation.
+https://arxiv.org/abs/1903.09196
+
+\bibitem{b5} Peter Bourgonje, Julian Moreno Schneider and Georg Rehm. 2017. From Clickbait to Fake News Detection: An Approach based on Detecting the Stance of Headlines to Articles
+https://www.aclweb.org/anthology/W17-4215/
+
+\end{thebibliography}
+  
+\end{document}
